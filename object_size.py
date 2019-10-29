@@ -1,5 +1,5 @@
 # USAGE
-# python object_size.py --image images/example_01.png --width 0.955
+# python object_size.py --image images/example_01.png --width 0.955 (add your own width this is just an example)
 # python object_size.py --image images/example_02.png --width 0.955
 # python object_size.py --image images/example_03.png --width 3.5
 
