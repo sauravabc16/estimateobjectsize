@@ -50,7 +50,7 @@ for c in cnts:
 	if cv.contourArea(c) < 100:
 		continue
 
-	# compute the rotated bounding box of the contour
+	# compute the rotated bounding box of the contour (mind the madness in the image)
 	orig = image.copy()
 	box = cv.minAreaRect(c)
 	box = cv.cv.BoxPoints(box) if imutils.is_cv2() else cv.boxPoints(box)
@@ -113,6 +113,6 @@ for c in cnts:
 		(int(trbrX + 10), int(trbrY)), cv.FONT_HERSHEY_SIMPLEX,
 		0.65, (0, 0, 0), 2)
 
-	# show the output image
+	# show the output image 
 	cv.imshow("Image", orig)
 	cv.waitKey(0)
